@@ -3,11 +3,26 @@ body
     background: #2f353b;
 }
 
-mainText
+.mainText
 {
     color: #fff;
-    padding-left: 20px;
+    padding-left: 30px;
     font-size: 25px;
+}
+
+.studentBlock
+{
+    background-color: #e0c884;
+    width: 600px;
+    margin: auto;
+
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    border: 6px solid #9e8a52;
 }
 
 header

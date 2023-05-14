@@ -5,7 +5,10 @@
 {% endblock %}
 
 {% block body %}
-    <mainText>
-        {{ students }}
-    </mainText>
+<div class="studentBlock">
+    {% for currentStudent in students%}
+        Студент {{ currentStudent.group }} группы<br>{{ currentStudent.fio }}<br>
+        Описание:<br>{{ currentStudent.title }}
+    {% endfor %}
+</div>
 {% endblock %}
