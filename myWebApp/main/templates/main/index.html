@@ -7,6 +7,11 @@
 {% block body %}
 <div class="TextHeader">
     Все студенты
+
+    {% if user.is_authenticated %}
+    <br> <a href="createstudent/"> <i class="fa-solid fa-square-plus"></i> Добавить студента </a>
+    {% endif %}
+
 </div>
     {% for currentStudent in students%}
     <div class="StudentBlock">

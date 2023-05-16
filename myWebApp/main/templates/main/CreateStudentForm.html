@@ -1,0 +1,28 @@
+{% extends 'main/baseTemplate.html' %}
+
+{% block Title %}
+Добавление студента
+{% endblock %}
+
+{% block body %}
+<div class="TextHeader">
+    <b>Добавление студента</b>
+    {{form}}
+</div>
+<form method="post">
+<div class="InputField">
+    {% csrf_token %}
+
+    {#Фио студента  <input type="text" class="form-control"><br>#}
+    {#Группа  <input type="text" class="form-control"><br>#}
+    {#Описание  <input type="text" class="form-control"><br>#}
+        <span>{{ error }} </span>
+
+</div>
+
+<div class="TextHeader">
+    <button class="btn btn-success" type="submit">Добавить студента</button>
+</div>
+</form>
+
+{% endblock %}

@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Student
+from .forms import AddStudent
 
 
 def start_site(request):
