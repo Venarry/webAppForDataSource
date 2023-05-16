@@ -5,11 +5,9 @@ body
 
 .TextHeader
 {
-    {# text-align: center #};
     text-align: center;
     color: #fff;
     font-size: 45px;
-    {# margin-left: 42vw #};
 }
 
 .TextHeader a
@@ -52,12 +50,26 @@ body
 
 .SiteHeader
 {
-    background-color: #5787d4;
+    background-color: #6787d4;
     height: 80px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    text-align: right;
     padding-right: 20px;
+}
+
+.SiteHeader .LeftText
+{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.SiteHeader .RightText
+{
+    text-align: right;
+    padding-left: 20px;
 }
 
 .SiteHeader a
@@ -65,5 +77,4 @@ body
     font-size: 45px;
     color: #fff;
     text-decoration: none;
-    margin-left: 40px;
 }

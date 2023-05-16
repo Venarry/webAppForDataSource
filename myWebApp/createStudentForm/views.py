@@ -10,7 +10,7 @@ def create(request):
             form.save()
             return redirect('home')
         else:
-            error = "ээээ"
+            error = "Ошбика ввода"
 
     form = AddStudentForm()
 

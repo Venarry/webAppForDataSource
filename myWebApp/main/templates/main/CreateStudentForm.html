@@ -7,12 +7,14 @@
 {% block body %}
 <div class="TextHeader">
     <b>Добавление студента</b>
-    {{form}}
+
 </div>
 <form method="post">
 <div class="InputField">
     {% csrf_token %}
-
+    Фио студента {{ form.fio }}<br>
+    Группа {{ form.group }}<br>
+    Описание {{ form.title }}<br>
     {#Фио студента  <input type="text" class="form-control"><br>#}
     {#Группа  <input type="text" class="form-control"><br>#}
     {#Описание  <input type="text" class="form-control"><br>#}
