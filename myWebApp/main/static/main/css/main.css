@@ -1,6 +1,12 @@
 body
 {
     background: #2f353b;
+    color: #fff;
+}
+
+ul a
+{
+    text-decoration: none;
 }
 
 .TextHeader
@@ -57,19 +63,23 @@ body
     justify-content: space-between;
     align-items: center;
 
-    padding-right: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.SiteHeader .Username
+{
+    color: #94e084;
 }
 
 .SiteHeader .LeftText
 {
     text-align: left;
-    padding-left: 20px;
 }
 
 .SiteHeader .RightText
 {
     text-align: right;
-    padding-left: 20px;
 }
 
 .SiteHeader a
@@ -77,4 +87,5 @@ body
     font-size: 45px;
     color: #fff;
     text-decoration: none;
+    padding-left: 20px;
 }
